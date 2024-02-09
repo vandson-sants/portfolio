@@ -51,9 +51,9 @@ body {
 
 .main {
   background-color: var(--primary-white);
-  background-image: url("./image/Capa\ banner\ \(1\).png");
+  background-image: url("./image/Capa\ banner\ \(2\).png");
   background-size: cover;
-  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .presentation {
@@ -61,6 +61,37 @@ body {
   align-items: center;
   width: 100%;
   height: calc(100vh - 80px);
+}
+
+.btn-scrollTop {
+  outline: none;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  box-shadow: 0 1px 6px 2px rgba(0, 0, 0, 0.3),
+    0 2px 4px -1px rgba(0, 0, 0, 0.6);
+  z-index: 999;
+  cursor: pointer;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.4s ease;
+}
+
+.btn-scrollTop.active {
+  visibility: visible;
+  opacity: 1;
+}
+
+#up-arrow-img {
+  max-width: 60px;
+  max-height: 60px;
 }
 
 .content-presentation {
@@ -129,6 +160,7 @@ body {
 }
 .about-text {
   color: var(--primary-black);
+  font-size: 1.1rem;
 }
 
 #img-about {
@@ -257,7 +289,6 @@ body {
   width: 100%;
   background-color: var(--background);
   color: var(--primary-white);
-  padding: 40px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -265,4 +296,10 @@ body {
 
 .developer-name {
   margin-left: 12px;
+  font-size: 1rem;
+}
+
+.footer-icon {
+  max-width: 100px;
+  max-height: 100px;
 }
