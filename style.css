@@ -47,41 +47,51 @@ body {
   align-items: center;
   width: 100%;
   height: calc(100vh - 80px);
-  background-color: #c5c5c7;
-  background: url("./image/capaG3.jpg");
-  background-size: cover;
-  background-position: 50% 50%;
-  padding-left: 10%;
-  padding-right: 10%;
-  padding-top: 80px;
-  padding-bottom: 80px;
 }
 
-.main-content {
+.main {
+  background-color: var(--primary-white);
+  background-image: url("./image/Capa\ banner\ \(1\).png");
+  background-size: cover;
+  background-position: center;
+}
+
+.presentation {
+  display: grid;
+  align-items: center;
+  width: 100%;
+  height: calc(100vh - 80px);
+}
+
+.content-presentation {
+  width: 100%;
+  display: grid;
+  justify-items: center;
   padding: 2rem;
-  background: #000000c5;
+  padding-left: 10%;
+  padding-right: 10%;
   border-radius: 4px;
 }
 
-.title-main {
-  color: var(--primary-white);
+.title-welcome {
+  color: var(--primary-black);
   font-size: 3rem;
 }
 
 .title-presentation {
-  color: var(--primary-white);
+  color: var(--primary-black);
   font-size: 2rem;
   font-style: italic;
   margin-top: 10px;
   margin-bottom: 35px;
 }
 
-.main a {
+.presentation a {
   text-decoration: none;
 }
 
 .btn-call-projects {
-  color: var(--secondary-white);
+  color: var(--primary-white);
   background-color: var(--primary-black);
   font-weight: bold;
   padding: 1rem;
