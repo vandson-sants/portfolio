@@ -19,25 +19,30 @@
     <!-- inicio cabeçalho -->
     <nav class="nav">
       <ul class="nav-list">
-        <li><a href="#">Home</a></li>
+        <li><a class="link-navigation" href="#home">Home</a></li>
       </ul>
       <ul class="nav-list">
-        <li><a href="#">Sobre</a></li>
+        <li><a class="link-navigation" href="#sobre">Sobre</a></li>
       </ul>
       <ul class="nav-list">
-        <li><a href="#">Projetos</a></li>
+        <li><a class="link-navigation" href="#projetos">Projetos</a></li>
       </ul>
       <ul class="nav-list">
-        <li><a href="#">Contato</a></li>
+        <li><a class="link-navigation" href="#contato">Contato</a></li>
       </ul>
     </nav>
     <!-- fim cabeçalho -->
 
-    <section class="main">
-      <div class="main-banner"></div>
-    </section>
+    <section class="main"></section>
 
-    <section class="presentation">
+    <section id="home" class="presentation">
+      <div class="content-presentation">
+        <h1 class="title-welcome">Sejam todos bem-vindos!</h1>
+        <p class="title-presentation">Dev Web Front-End</p>
+        <a href="#projetos">
+          <button class="btn-call-projects">Ver projetos</button>
+        </a>
+      </div>
       <article>
         <button class="btn-scrollTop" onclick="backTop();">
           <img
@@ -47,17 +52,10 @@
           />
         </button>
       </article>
-      <div class="content-presentation">
-        <h1 class="title-welcome">Sejam todos bem-vindos!</h1>
-        <p class="title-presentation">Dev Web Front-End</p>
-        <a href="#">
-          <button class="btn-call-projects">Ver projetos</button>
-        </a>
-      </div>
     </section>
     <!-- fim main -->
 
-    <section class="about">
+    <section id="sobre" class="about">
       <div class="about-content">
         <h2 class="about-title-content">Sobre</h2>
         <p class="about-text">
@@ -77,7 +75,7 @@
     </section>
     <!-- fim about -->
 
-    <section class="projects">
+    <section id="projetos" class="projects">
       <div class="title-container">
         <h2 class="projects-title">Meus projetos</h2>
         <p class="title-subtext">conheça alguns</p>
@@ -292,6 +290,31 @@
       </div>
     </section>
 
+    <section id="contato" class="contact">
+      <div class="container">
+        <h3 class="title">Contato</h3>
+        <p class="title-subtext">disponibilidade</p>
+        <div class="social-link">
+          <i id="social-icon" class="fa-brands fa-linkedin"></i>
+          <a
+            id="linkedin"
+            href="https://www.linkedin.com/in/vandson-santos-311560165/"
+            >vandson-santos</a
+          >
+        </div>
+
+        <div class="social-link">
+          <i id="social-icon" class="fa-solid fa-envelope"></i>
+          <span>vandson.santos17@gmail.com</span>
+        </div>
+
+        <div class="social-link">
+          <i id="social-icon" class="fa-brands fa-square-whatsapp"></i>
+          <span>(84)986275547</span>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <p class="copyright">Todos os direitos reservados &copy;</p>
       <h3 class="developer-name">by Vandson Santos</h3>
@@ -303,6 +326,10 @@
         />
       </div>
     </footer>
+    <script
+      src="https://kit.fontawesome.com/6489421af0.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="./script.js"></script>
   </body>
 </html>

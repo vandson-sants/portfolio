@@ -9,6 +9,10 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   --primary-white: #fff;
   --secondary-white: #ddd;
@@ -30,13 +34,13 @@ body {
   list-style: none;
 }
 
-.nav-list a {
+.link-navigation {
   text-decoration: none;
   color: var(--secondary-white);
   padding: 20px;
 }
 
-.nav-list a:hover {
+.link-navigation:hover {
   color: var(--primary-white);
   text-decoration: underline;
 }
@@ -47,12 +51,10 @@ body {
   align-items: center;
   width: 100%;
   height: calc(100vh - 80px);
-}
-
-.main {
   background-color: var(--primary-white);
   background-image: url("./image/Capa\ banner\ \(2\).png");
   background-size: cover;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
 }
 
@@ -66,8 +68,8 @@ body {
 .btn-scrollTop {
   outline: none;
   border-radius: 50%;
-  width: 60px;
-  height: 60px;
+  width: 50px;
+  height: 50px;
   padding: 8px;
   display: flex;
   align-items: center;
@@ -90,8 +92,8 @@ body {
 }
 
 #up-arrow-img {
-  max-width: 60px;
-  max-height: 60px;
+  max-width: 50px;
+  max-height: 50px;
 }
 
 .content-presentation {
@@ -136,6 +138,7 @@ body {
 .btn-call-projects:hover {
   transform: scale(0.9);
 }
+
 /* fim main */
 
 .about {
@@ -284,6 +287,49 @@ body {
 }
 
 /* fim seçao projetos */
+
+.contact {
+  padding: 6rem;
+  display: flex;
+  justify-content: center;
+}
+
+#social-icon {
+  font-size: 2rem;
+}
+
+#linkedin {
+  color: var(--primary-black);
+  text-decoration: underline;
+}
+
+.container {
+  width: 800px;
+  height: 450px;
+  display: flex;
+  background-color: var(--secondary-white);
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 5px;
+}
+
+.title {
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.title-subtext {
+  display: flex;
+  justify-content: center;
+}
+
+.social-link {
+  display: flex;
+  padding: 2rem;
+  align-items: center;
+  gap: 1rem;
+}
 
 .footer {
   width: 100%;
